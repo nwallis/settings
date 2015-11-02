@@ -14,7 +14,7 @@ iabbrev <// </<C-X><C-O>
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-colorscheme gruvbox
+colorscheme bluegreen
 
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd VimEnter * NERDTree
