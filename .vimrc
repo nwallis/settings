@@ -4,6 +4,7 @@ set shiftwidth=2
 set expandtab
 set bg=dark
 set completeopt=longest,menuone
+set t_Co=256
 
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
