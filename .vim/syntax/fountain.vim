@@ -45,7 +45,7 @@ hi def link fountainParenthetical		function
 hi def link fountainTransition			todo
 hi def link fountainTransitionForced	todo
 hi def link fountainCentered			character
-hi fountainUnderlined					gui=underline
+hi fountainUnderlined					gui=underline cterm=underline
 hi fountainItalic						gui=italic cterm=italic	
 hi fountainBold							gui=bold cterm=bold	
 hi fountainBoldItalic					gui=bold,italic cterm=bold,italic	
