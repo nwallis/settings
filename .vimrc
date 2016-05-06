@@ -1,8 +1,9 @@
-set smartindent
+filetype plugin indent on
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set bg=dark
+
+set smartindent
 set completeopt=longest,menuone
 set t_Co=256
 
@@ -13,7 +14,6 @@ iabbrev <// </<C-X><C-O>
 
 execute pathogen#infect()
 syntax on
-filetype plugin indent on
 colorscheme gruvbox
 
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
