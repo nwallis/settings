@@ -2,6 +2,7 @@ filetype plugin indent on
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set bg=dark
 
 set smartindent
 set completeopt=longest,menuone
