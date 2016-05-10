@@ -18,6 +18,7 @@ iabbrev <// </<C-X><C-O>
 
 nnoremap <silent> <Leader>. :exe "vertical resize +5"<CR>
 nnoremap <silent> <Leader>m :exe "vertical resize -5"<CR>
+cnoremap sudow w !sudo tee % >/dev/null
 
 execute pathogen#infect()
 syntax on
