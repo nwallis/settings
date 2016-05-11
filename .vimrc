@@ -1,11 +1,10 @@
 filetype plugin indent on
+
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set bg=dark
 set smartindent
 set completeopt=longest,menuone
-set t_Co=256
 
 let mapleader=","
 let g:user_emmet_expandabbr_key='<Tab>'
@@ -20,9 +19,13 @@ nnoremap <silent> <Leader>. :exe "vertical resize +5"<CR>
 nnoremap <silent> <Leader>m :exe "vertical resize -5"<CR>
 cnoremap sudow w !sudo tee % >/dev/null
 
-execute pathogen#infect()
 syntax on
-colorscheme gruvbox
 
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd VimEnter * NERDTree
+
+execute pathogen#infect()
+
+set bg=dark
+set t_Co=256
+colorscheme gruvbox
