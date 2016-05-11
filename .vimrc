@@ -20,11 +20,10 @@ nnoremap <silent> <Leader>m :exe "vertical resize -5"<CR>
 cnoremap sudow w !sudo tee % >/dev/null
 
 syntax on
-
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd VimEnter * NERDTree
 
 execute pathogen#infect()
+autocmd VimEnter * NERDTree
 
 set bg=dark
 set t_Co=256
