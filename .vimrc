@@ -8,6 +8,19 @@ set completeopt=longest,menuone
 
 let mapleader=","
 let g:user_emmet_expandabbr_key='<Tab>'
+
+if executable('ag')
+  let g:ctrlp_use_caching = 0
+  set grepprg=ag\ --nogroup\ --nocolor
+  if has('win32')
+    let g:ctrlp_user_command = 'ag -l --nocolor -g "" %s'
+  else
+    let g:ctrlp_user_command = 'ag -l --nocolor -g "" %s'
+  endif
+else
+  autocmd VimEnter * NERDTree
+endif
+
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -23,7 +36,7 @@ syntax on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 execute pathogen#infect()
-autocmd VimEnter * NERDTree
+
 
 set bg=dark
 set t_Co=256
