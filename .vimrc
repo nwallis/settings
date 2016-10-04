@@ -35,6 +35,7 @@ cnoremap sudow w !sudo tee % >/dev/null
 
 syntax on
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
 execute pathogen#infect()
 
