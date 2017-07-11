@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/vim-polyglot"]
 	path = .vim/bundle/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
+[submodule ".vim/bundle/phoenix.vim"]
+	path = .vim/bundle/phoenix.vim
+	url = https://github.com/c-brenn/phoenix.vim.git
