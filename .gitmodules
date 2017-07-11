@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/vim-jsbeautify"]
 	path = .vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
+[submodule ".vim/bundle/vim-elixir"]
+	path = .vim/bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git
