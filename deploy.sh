@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rsync -avh .vim* ~/
+rsync -avz .vim* ~/
