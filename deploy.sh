@@ -11,3 +11,4 @@ git config --global alias.st status
 git config --global alias.a add
 git config --global alias.ph push
 git config --global alias.pl pull
+git config --global alias.mg merge
